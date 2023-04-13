@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <style>
+        #bloco{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloco"></div>
+    <p id="texto"></p>
+    
+    <script>
+        $("#bloco").click(function (){
+            $('#texto').text("quando clica muda o texto")
+        })
+
+        $("#bloco").mouseenter(function (){
+            $('#texto').text("mouse entro no quadrado")
+        })
+
+        $("#bloco").mouseleave(function (){
+            $('#texto').text("mouse saio do quadrado")
+        })
+        
+    </script>
+    
+</body>
+</html>
