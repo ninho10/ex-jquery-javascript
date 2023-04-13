@@ -15,21 +15,15 @@
     </style>
 </head>
 <body>
-    <div id="bloco"></div>
+    <label>Digite seu nome</label>
+    <input type="text" id="nome">
     <p id="texto"></p>
     
     <script>
-        $("#bloco").click(function (){
-            $('#texto').text("quando clica muda o texto")
-        })
+      $("#nome").keyup(function(){
+        $("#texto").text($("#nome").val())
 
-        $("#bloco").mouseenter(function (){
-            $('#texto').text("mouse entro no quadrado")
-        })
-
-        $("#bloco").mouseleave(function (){
-            $('#texto').text("mouse saio do quadrado")
-        })
+      })
         
     </script>
     
